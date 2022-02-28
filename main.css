@@ -1,0 +1,67 @@
+body, html 
+{
+height: 100%;
+margin: 0;
+font-family: Arial, Helvetica, sans-serif;
+background-color: #000000;
+}
+  
+
+  
+.bg-image 
+{   
+height: 50%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+  
+
+  .button {
+    background-color: rgb(97, 159, 209); /* Fallback color */
+    background-color: rgba(253, 0, 139, 0.4); /* Black w/opacity/see-through */
+    color: rgb(224, 214, 116);
+    font-weight: bold;
+    font-size: 50px;
+    border: 7px solid #f5f789;
+    position: fixed; /* Stay fixed */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 230px;
+    padding: 12px;
+    text-align: center;
+    transition: all 0.4s;
+    cursor: pointer;
+    border-radius: 17px;
+    outline: none;
+}
+
+.button:hover {
+    background-color: rgb(78, 130, 241); 
+    box-shadow: 3px 3px 5px #201f1f;
+    text-shadow: 2px 2px 2px #201f1f ;
+}
+
+.vidbg {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: hidden;
+}
+.vidbg video {
+  min-width: 100%; 
+  min-height: 100%; 
+  max-width: screen;
+  max-height: screen;
+  width: auto;
+  height: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  zoom: 0.01;
+}
